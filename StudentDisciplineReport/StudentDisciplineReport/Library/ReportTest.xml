@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReportTest</name>
+    </assembly>
+    <members>
+        <member name="T:ReportTest.ConfigItem">
+            <summary>
+            設定項目    /// 
+            </summary>
+        </member>
+        <member name="M:ReportTest.ConfigItem.GetFieldList">
+            <summary>
+            取得特定欄位
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ReportTest.ConfigItem.GetFilterValue">
+            <summary>
+            取得條件內容,ex. 學年度=98
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ReportTest.ConfigItem.Name">
+            <summary>
+            名稱
+            </summary>
+        </member>
+        <member name="P:ReportTest.ConfigItem.Filter">
+            <summary>
+            篩選條件
+            </summary>
+        </member>
+        <member name="P:ReportTest.ConfigItem.Field">
+            <summary>
+            欄位
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.AddressInfo">
+            <summary>
+            地址資訊
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.AttendanceDeatil">
+            <summary>
+            缺曠明細
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.AttendanceDeatil._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.AttendanceSummary">
+            <summary>
+            缺曠統計
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.CourseScoreHC">
+            <summary>
+            新竹國中課程成績
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.CourseScoreKH">
+            <summary>
+            高雄國中課程成績
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.CourseScoreSH">
+            <summary>
+            高中課程成績
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.DiplomaLeaveInfoJH">
+            <summary>
+            國中畢業資訊
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.DiplomaLeaveInfoSH">
+            <summary>
+            高中畢業及離校資訊
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.DisciplineDetail">
+            <summary>
+            獎懲明細
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.DisciplineDetail._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.DisciplineMDSummary">
+            <summary>
+            獎懲統計(依功過相抵)
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.DisciplineMDSummary._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.DisciplineSummary">
+            <summary>
+            獎懲統計
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.ParentInfo">
+            <summary>
+            父母監護人資訊
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.SchoolInfo">
+            <summary>
+            學校資訊
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.SemesterCourseScoreJH">
+            <summary>
+            國中學期課程學習成績
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.SemesterCourseScoreJH._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.SemesterDomainScore">
+            <summary>
+            國中學期領域成績
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.SemesterDomainScore._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.SemesterEntryScore">
+            <summary>
+            高中學期分項成績
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.SemesterEntryScore._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.SemesterEntryScore._FieldDict">
+            <summary>
+            內容項目與欄位對照
+            </summary>
+        </member>
+        <member name="M:ReportTest.DAO.SemesterEntryScore.LoadFields">
+            <summary>
+            欄位對照表
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.SemesterSubjectScoreJH">
+            <summary>
+            國中學期科目成績
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.SemesterSubjectScoreJH._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.SemesterSubjectScoreSH">
+            <summary>
+            高中學期科目成績
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.SemesterSubjectScoreSH._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.StudentBasicInfo">
+            <summary>
+            學生基本資料
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.YearEntryScore">
+            <summary>
+            高中學年分項成績
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.YearEntryScore._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.YearEntryScore._FieldDict">
+            <summary>
+            內容項目與欄位對照
+            </summary>
+        </member>
+        <member name="M:ReportTest.DAO.YearEntryScore.LoadFields">
+            <summary>
+            欄位對照表
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.YearSubjectScore">
+            <summary>
+            高中學年科目成績
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.YearSubjectScore._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
+        <member name="M:ReportTest.framework.MargeCenter.IMargeGroupBulider.GetMargeGroup">
+            <summary>
+            建立新的DetailPane顯示項目實體
+            </summary>
+            <returns>DetailPane顯示項目</returns>
+        </member>
+        <member name="T:ReportTest.framework.MargeCenter.MargeGroupBulider`1">
+            <summary>
+            DetailPane顯示項目的產生器
+            </summary>
+            <typeparam name="T">DetailPane顯示項目的型別，此型別必需實做預設建構子</typeparam>
+        </member>
+        <member name="M:ReportTest.framework.MargeCenter.MargeGroupBulider`1.GetMargeGroup">
+            <summary>
+            建立新的DetailPane顯示項目實體
+            </summary>
+            <returns>DetailPane顯示項目</returns>
+        </member>
+        <member name="F:ReportTest.Marge._Config">
+            <summary>
+            設定檔
+            </summary>
+        </member>
+        <member name="F:ReportTest.Marge._StudentIDList">
+            <summary>
+            學生系統編號
+            </summary>
+        </member>
+        <member name="F:ReportTest.Marge._mc">
+            <summary>
+            MargeCenter
+            </summary>
+        </member>
+        <member name="F:ReportTest.Marge._MargeGroupDict">
+            <summary>
+            MargeGroup
+            </summary>
+        </member>
+        <member name="M:ReportTest.Marge.MargeData">
+            <summary>
+            整理與合併資料
+            </summary>
+        </member>
+        <member name="M:ReportTest.Marge.GetDataTable">
+            <summary>
+            取得合併後Data Table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ReportTest.Marge.AddMargeGroup(System.String)">
+            <summary>
+            加入MargeGroup
+            </summary>
+            <param name="Name"></param>
+        </member>
+        <member name="M:ReportTest.Marge.AddType(System.Type)">
+            <summary>
+            新增類別
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="P:ReportTest.MargeClass.Name">
+            <summary>
+            名稱
+            </summary>
+        </member>
+        <member name="P:ReportTest.MargeField.FieldName">
+            <summary>
+            名稱
+            </summary>
+        </member>
+        <member name="P:ReportTest.MargeField.FieldType">
+            <summary>
+            型態
+            </summary>
+        </member>
+        <member name="T:ReportTest.Properties.Resources">
+            <summary>
+              用於查詢當地語系化字串等的強類型資源類別。
+            </summary>
+        </member>
+        <member name="P:ReportTest.Properties.Resources.ResourceManager">
+            <summary>
+              傳回這個類別使用的快取的 ResourceManager 執行個體。
+            </summary>
+        </member>
+        <member name="P:ReportTest.Properties.Resources.Culture">
+            <summary>
+              覆寫目前執行緒的 CurrentUICulture 屬性，對象是所有
+              使用這個強類型資源類別的資源查閱。
+            </summary>
+        </member>
+        <member name="P:ReportTest.Properties.Resources.Aspose_Total">
+            <summary>
+              查詢類型 System.Byte[] 的當地語系化資源。
+            </summary>
+        </member>
+    </members>
+</doc>
