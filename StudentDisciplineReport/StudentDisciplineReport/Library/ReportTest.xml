@@ -56,6 +56,11 @@
             缺曠統計
             </summary>
         </member>
+        <member name="F:ReportTest.DAO.AttendanceSummary._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
         <member name="T:ReportTest.DAO.CourseScoreHC">
             <summary>
             新竹國中課程成績
@@ -104,6 +109,11 @@
         <member name="T:ReportTest.DAO.DisciplineSummary">
             <summary>
             獎懲統計
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.DisciplineSummary._OptionText">
+            <summary>
+            傳入條件文字
             </summary>
         </member>
         <member name="T:ReportTest.DAO.ParentInfo">
