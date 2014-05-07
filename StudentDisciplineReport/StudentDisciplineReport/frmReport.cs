@@ -34,6 +34,7 @@ namespace StudentDisciplineReport
                 System.Text.StringBuilder sb = new StringBuilder();
                 sb.AppendLine("學校資訊");
                 sb.AppendLine("學生基本資料");
+                sb.AppendLine("報表自訂;學年度=" + iptSchoolYear.Value + ",學期=" + iptSemester.Value);
                 sb.AppendLine("獎懲明細;學年度=" + iptSchoolYear.Value + ",學期=" + iptSemester.Value);
                 sb.AppendLine("獎懲統計;學年度=" + iptSchoolYear.Value);
                 sb.AppendLine("獎懲統計_功過相抵;學年度=" + iptSchoolYear.Value);
