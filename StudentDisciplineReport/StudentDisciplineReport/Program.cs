@@ -18,7 +18,18 @@ namespace StudentDisciplineReport
                 {
                     frmReport fr = new frmReport();
                     fr.ShowDialog();
+                }
+            };
 
+
+            // 測試按鈕
+            K12.Presentation.NLDPanels.Student.ListPaneContexMenu["Test世界高中學生個人缺曠獎懲明細表"].Enable = true;
+            K12.Presentation.NLDPanels.Student.ListPaneContexMenu["Test世界高中學生個人缺曠獎懲明細表"].Click += delegate
+            {
+                if (K12.Presentation.NLDPanels.Student.SelectedSource.Count > 0)
+                {
+                    frmReport1 fr = new frmReport1();
+                    fr.ShowDialog();
                 }
             };
         }

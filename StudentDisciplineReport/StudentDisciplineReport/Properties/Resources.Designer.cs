@@ -69,5 +69,15 @@ namespace StudentDisciplineReport.Properties {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   查詢類型 System.Byte[] 的當地語系化資源。
+        /// </summary>
+        internal static byte[] 學生個人缺曠獎懲明細表_世界高中 {
+            get {
+                object obj = ResourceManager.GetObject("學生個人缺曠獎懲明細表_世界高中", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
