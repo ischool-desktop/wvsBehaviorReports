@@ -34,6 +34,8 @@
             this.iptSemester = new DevComponents.Editors.IntegerInput();
             this.btnPrint = new DevComponents.DotNetBar.ButtonX();
             this.btnExit = new DevComponents.DotNetBar.ButtonX();
+            this.lnkDefault = new System.Windows.Forms.LinkLabel();
+            this.lnkUserDef = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.iptSchoolYear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iptSemester)).BeginInit();
             this.SuspendLayout();
@@ -109,7 +111,7 @@
             this.btnPrint.AutoSize = true;
             this.btnPrint.BackColor = System.Drawing.Color.Transparent;
             this.btnPrint.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnPrint.Location = new System.Drawing.Point(107, 68);
+            this.btnPrint.Location = new System.Drawing.Point(107, 90);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(75, 25);
             this.btnPrint.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -123,7 +125,7 @@
             this.btnExit.AutoSize = true;
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnExit.Location = new System.Drawing.Point(196, 68);
+            this.btnExit.Location = new System.Drawing.Point(196, 90);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 25);
             this.btnExit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -131,11 +133,37 @@
             this.btnExit.Text = "離開";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // lnkDefault
+            // 
+            this.lnkDefault.AutoSize = true;
+            this.lnkDefault.BackColor = System.Drawing.Color.Transparent;
+            this.lnkDefault.Location = new System.Drawing.Point(15, 62);
+            this.lnkDefault.Name = "lnkDefault";
+            this.lnkDefault.Size = new System.Drawing.Size(86, 17);
+            this.lnkDefault.TabIndex = 6;
+            this.lnkDefault.TabStop = true;
+            this.lnkDefault.Text = "檢視套印樣版";
+            this.lnkDefault.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkDefault_LinkClicked);
+            // 
+            // lnkUserDef
+            // 
+            this.lnkUserDef.AutoSize = true;
+            this.lnkUserDef.BackColor = System.Drawing.Color.Transparent;
+            this.lnkUserDef.Location = new System.Drawing.Point(104, 62);
+            this.lnkUserDef.Name = "lnkUserDef";
+            this.lnkUserDef.Size = new System.Drawing.Size(86, 17);
+            this.lnkUserDef.TabIndex = 7;
+            this.lnkUserDef.TabStop = true;
+            this.lnkUserDef.Text = "變更套印樣版";
+            this.lnkUserDef.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkUserDef_LinkClicked);
+            // 
             // frmReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 108);
+            this.ClientSize = new System.Drawing.Size(289, 124);
+            this.Controls.Add(this.lnkUserDef);
+            this.Controls.Add(this.lnkDefault);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.iptSemester);
@@ -161,5 +189,7 @@
         private DevComponents.Editors.IntegerInput iptSemester;
         private DevComponents.DotNetBar.ButtonX btnPrint;
         private DevComponents.DotNetBar.ButtonX btnExit;
+        private System.Windows.Forms.LinkLabel lnkDefault;
+        private System.Windows.Forms.LinkLabel lnkUserDef;
     }
 }
