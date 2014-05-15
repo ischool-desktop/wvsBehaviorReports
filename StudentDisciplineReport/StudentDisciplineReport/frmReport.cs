@@ -51,7 +51,11 @@ namespace StudentDisciplineReport
                 m.MargeData();
                 System.Data.DataTable dt = m.GetDataTable();
 
-        
+                // 使用產生合併欄位功能
+                ReportTest.MergeNameExprotForm mnef = new ReportTest.MergeNameExprotForm();
+                mnef.SetDefaultColumnsName(m.GetMargeFields());
+                mnef.ShowDialog();
+
                 Aspose.Words.Document doc = _ConfigList[0].GetTemplate(); //new Aspose.Words.Document(new System.IO.MemoryStream(Properties.Resources.學生個人獎懲紀錄表_世界高中));
                 Aspose.Words.DocumentBuilder builder = new Aspose.Words.DocumentBuilder(doc);
                 doc.MailMerge.Execute(dt);

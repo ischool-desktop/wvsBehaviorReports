@@ -41,7 +41,7 @@ namespace StudentDisciplineReport
                 sb.AppendLine("學生基本資料");
                 sb.AppendLine("報表自訂;學年度=" + iptSchoolYear.Value + ",學期=" + iptSemester.Value);
                 sb.AppendLine("獎懲明細;學年度=" + iptSchoolYear.Value + ",學期=" + iptSemester.Value);
-                sb.AppendLine("缺曠明細;學年度=" + iptSchoolYear.Value + ",學期=" + iptSemester.Value);
+                sb.AppendLine("缺曠明細;學年度=" + iptSchoolYear.Value + ",學期=" + iptSemester.Value+",縮寫=是");
                 sb.AppendLine("獎懲統計;學年度=" + iptSchoolYear.Value);
                 sb.AppendLine("缺曠統計;學年度=" + iptSchoolYear.Value);
                 sb.AppendLine("獎懲統計_功過相抵;學年度=" + iptSchoolYear.Value);
@@ -52,6 +52,12 @@ namespace StudentDisciplineReport
 
                 m.MargeData();
                 System.Data.DataTable dt = m.GetDataTable();
+
+                // 使用產生合併欄位功能
+                ReportTest.MergeNameExprotForm mnef = new ReportTest.MergeNameExprotForm();
+                mnef.SetDefaultColumnsName(m.GetMargeFields());
+                mnef.ShowDialog();
+
 
                 // 讀取樣版
                 Aspose.Words.Document doc = _ConfigList[0].GetTemplate();//new Aspose.Words.Document(new System.IO.MemoryStream(Properties.Resources.學生個人缺曠獎懲明細表_世界高中));

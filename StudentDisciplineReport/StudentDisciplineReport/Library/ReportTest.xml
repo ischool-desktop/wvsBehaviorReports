@@ -186,9 +186,29 @@
             傳入條件文字
             </summary>
         </member>
+        <member name="T:ReportTest.DAO.ServiceLearning">
+            <summary>
+            服務學習時數
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.ServiceLearning._OptionText">
+            <summary>
+            傳入條件文字
+            </summary>
+        </member>
         <member name="T:ReportTest.DAO.StudentBasicInfo">
             <summary>
             學生基本資料
+            </summary>
+        </member>
+        <member name="T:ReportTest.DAO.TextScoreSB">
+            <summary>
+            文字評量與導師評語
+            </summary>
+        </member>
+        <member name="F:ReportTest.DAO.TextScoreSB._OptionText">
+            <summary>
+            傳入條件文字
             </summary>
         </member>
         <member name="T:ReportTest.DAO.YearEntryScore">
@@ -259,10 +279,21 @@
             MargeGroup
             </summary>
         </member>
+        <member name="F:ReportTest.Marge._FieldList">
+            <summary>
+            所有合併 Fields
+            </summary>
+        </member>
         <member name="M:ReportTest.Marge.MargeData">
             <summary>
             整理與合併資料
             </summary>
+        </member>
+        <member name="M:ReportTest.Marge.GetMargeFields">
+            <summary>
+            取得所合併的 Field 名稱
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:ReportTest.Marge.GetDataTable">
             <summary>
@@ -297,6 +328,23 @@
             型態
             </summary>
         </member>
+        <member name="F:ReportTest.MergeNameExprotForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ReportTest.MergeNameExprotForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ReportTest.MergeNameExprotForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="T:ReportTest.Properties.Resources">
             <summary>
               用於查詢當地語系化字串等的強類型資源類別。
@@ -314,6 +362,11 @@
             </summary>
         </member>
         <member name="P:ReportTest.Properties.Resources.Aspose_Total">
+            <summary>
+              查詢類型 System.Byte[] 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:ReportTest.Properties.Resources.temp">
             <summary>
               查詢類型 System.Byte[] 的當地語系化資源。
             </summary>
